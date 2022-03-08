@@ -6,6 +6,12 @@ public class Employee {
     String name;
     int salary;
 
+    public Employee(int employeeId, String name, int salary) {
+        this.employeeId = employeeId;
+        this.name = name;
+        this.salary = salary;
+    }
+
     Employee(String line){
         String[] split=line.split(" ");
         employeeId=Integer.parseInt(split[0]);
@@ -15,6 +21,7 @@ public class Employee {
     Employee(){
 
     }
+
 
 
     public int getEmployeeId() {

@@ -1,11 +1,6 @@
 package com.example.demo.employee;
 
-import com.example.demo.DemoApplication;
-import org.springframework.boot.SpringApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.*;
 import java.util.*;
@@ -51,10 +46,3 @@ public class EmployeeController {
 
 
 }
-    /*public List<Employee> listEmployee(){
-        return Arrays.asList(
-                new Employee(1,"name_1",1000),
-                new Employee(1,"name_1",1000)
-
-
-        );*/
