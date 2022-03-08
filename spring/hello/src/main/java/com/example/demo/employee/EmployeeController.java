@@ -13,12 +13,13 @@ import java.util.*;
 @RestController
 @RequestMapping (value = "/employee")
 public class EmployeeController {
-    @GetMapping(value = {" ","/"})
 
+    @GetMapping(value = {" ","/"})
     public List<Employee> listEmployee() throws IOException {
 
         // list that holds strings of a file
         List<String> listOfStrings = new ArrayList<String>();
+
         // load data from file
         BufferedReader bf = new BufferedReader(new FileReader("D:\\informatique\\work\\secondTask\\demo4\\spring\\hello\\src\\main\\resources\\employee"));
 
@@ -51,10 +52,3 @@ public class EmployeeController {
 
 
 }
-    /*public List<Employee> listEmployee(){
-        return Arrays.asList(
-                new Employee(1,"name_1",1000),
-                new Employee(1,"name_1",1000)
-
-
-        );*/
